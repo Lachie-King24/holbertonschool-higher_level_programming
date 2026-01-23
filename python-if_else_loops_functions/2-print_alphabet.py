@@ -1,5 +1,2 @@
 #!/usr/bin/python3
-value = 97
-while value < 123:
-    print("{}".format(chr(value)))
-    value += 1
+print("{}".format("".join(chr(i) for i in range(97, 123))))
