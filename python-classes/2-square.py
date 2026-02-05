@@ -4,7 +4,7 @@
 
 class Square:
     """Define a square"""
-    def __init__(self, size=0)
+    def __init__(self, size=0):
         self.size = size
 
     @property
@@ -12,9 +12,9 @@ class Square:
         return self._size
 
     @size.setter
-    def size(self, size):
-        if not isinstance(size, int):
+    def size(self, value):
+        if not isinstance(value, int):
             raise TypeError("size must be an integer")
-        if __size < 0:
+        if value < 0:
             raise ValueError("size must be >= 0")
-        self.__size = size
+        self.__size = value
