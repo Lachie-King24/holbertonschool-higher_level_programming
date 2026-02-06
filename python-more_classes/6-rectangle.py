@@ -16,7 +16,7 @@ class Rectangle:
         self.width = width
         self.height = height
         # add counter when instance created
-        number_of_instances += 1
+        Rectangle.number_of_instances += 1
 
     # getter for width
     @property
