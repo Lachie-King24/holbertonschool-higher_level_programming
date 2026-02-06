@@ -8,9 +8,15 @@ class Rectangle:
     """
     Defines a square
     """
+
+    # set counter for amount of instances
+    number_of_instances = 0
+
     def __init__(self, width=0, height=0):
         self.width = width
         self.height = height
+        # add counter when instance created
+        number_of_instances += 1
 
     # getter for width
     @property
@@ -63,3 +69,5 @@ class Rectangle:
 
     def __del__(self):
         print("Bye rectangle...")
+        # minus from instances when instance is deleted
+        number_of_instances -= 1
