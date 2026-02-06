@@ -1,9 +1,13 @@
 #!/usr/bin/python3
-"""Define a Rectangle"""
+"""
+Define a Rectangle
+"""
 
 
 class Rectangle:
-    """Defines a square"""
+    """
+    Defines a square
+    """
     def __init__(self, width=0, height=0):
         self.width = width
         self.height = height
@@ -41,6 +45,6 @@ class Rectangle:
 
     def perimeter(self):
         if self.__width == 0 or self.__height = 0:
-                return 0
+            return 0
         else:
             return 2 * (self.__width + self.__height)
