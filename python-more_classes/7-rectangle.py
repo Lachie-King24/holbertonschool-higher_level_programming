@@ -61,7 +61,7 @@ class Rectangle:
             return ""
 
         symbol = str(self.print_symbol)
-        rows = [symbol * self.__width for _ in range (self.__height)]
+        rows = [symbol * self.__width for _ in range(self.__height)]
         return "\n".join(rows)
 
     def __repr__(self):
