@@ -33,11 +33,6 @@ class Square:
         for space in range(self.__size):
             print(" " * self.__position[0], end="")
             print("#" * self.__size)
-        else:
-            for i in range(self.__size):
-                for j in range(self.__size):
-                    print("#", end="")
-                print()
 
     # getter for position
     @property
