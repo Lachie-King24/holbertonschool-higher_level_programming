@@ -1,29 +1,16 @@
-#!/usr/bin/python3
-MyList = __import__('1-my_list').MyList
+"""
+MyList class tests
 
-# Create an instance of MyList
-my_list = MyList()
-my_list.append(5)
-my_list.append(1)
-my_list.append(3)
-my_list.append(2)
-my_list.append(4)
-
-# Print original list
-print("Original list:", my_list)
-
-# Print sorted list using the method
-print("Sorted list:", end=" ")
-my_list.print_sorted()
-
-# Ensure original list is unchanged
-print("List after print_sorted:", my_list)
-
-# Additional tests
-empty_list = MyList()
-print("Empty list:", end=" ")
-empty_list.print_sorted()
-
-single_item = MyList([42])
-print("Single item list:", end=" ")
-single_item.print_sorted()
+>>> MyList = __import__('1-my_list').MyList
+>>> my_list = MyList([5, 1, 3, 2, 4])
+>>> my_list.print_sorted()
+[1, 2, 3, 4, 5]
+>>> my_list
+[5, 1, 3, 2, 4]
+>>> empty = MyList()
+>>> empty.print_sorted()
+[]
+>>> single = MyList([42])
+>>> single.print_sorted()
+[42]
+"""
