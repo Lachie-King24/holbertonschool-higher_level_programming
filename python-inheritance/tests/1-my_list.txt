@@ -39,5 +39,4 @@ Doctest file for MyList class
 >>> append_test.print_sorted()
 [1, 5, 10]
 >>> append_test
-[10, 1, 5]
-"""
+[10, 1, 5]"""
