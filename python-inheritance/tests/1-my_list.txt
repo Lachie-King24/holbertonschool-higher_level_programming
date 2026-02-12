@@ -3,40 +3,36 @@ Doctest file for MyList class
 
 >>> MyList = __import__('1-my_list').MyList
 
-# Test a normal list
 >>> my_list = MyList([5, 1, 3, 2, 4])
 >>> my_list.print_sorted()
 [1, 2, 3, 4, 5]
->>> my_list
+>>> list(my_list)
 [5, 1, 3, 2, 4]
 
-# Test an empty list
 >>> empty = MyList()
 >>> empty.print_sorted()
 []
->>> empty
+>>> list(empty)
 []
 
-# Test a single-item list
 >>> single = MyList([42])
 >>> single.print_sorted()
 [42]
->>> single
+>>> list(single)
 [42]
 
-# Test a list with negative and positive numbers
 >>> nums = MyList([-3, 0, 2, -1, 5])
 >>> nums.print_sorted()
 [-3, -1, 0, 2, 5]
->>> nums
+>>> list(nums)
 [-3, 0, 2, -1, 5]
 
-# Test that append still works
 >>> append_test = MyList()
 >>> append_test.append(10)
 >>> append_test.append(1)
 >>> append_test.append(5)
 >>> append_test.print_sorted()
 [1, 5, 10]
->>> append_test
-[10, 1, 5]"""
+>>> list(append_test)
+[10, 1, 5]
+"""
