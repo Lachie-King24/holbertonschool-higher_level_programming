@@ -1,3 +1,6 @@
+#!/usr/bin/python3
+"""Define abstract Animal class and Dog and Cat subclasses"""
+
 from abc import ABC, abstractmethod
 
 class Animal(ABC):
