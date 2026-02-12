@@ -1,29 +1,24 @@
 >>> MyList = __import__('1-my_list').MyList
-
 >>> my_list = MyList([5, 1, 3, 2, 4])
 >>> my_list.print_sorted()
 [1, 2, 3, 4, 5]
 >>> list(my_list)
 [5, 1, 3, 2, 4]
-
 >>> empty = MyList()
 >>> empty.print_sorted()
 []
 >>> list(empty)
 []
-
 >>> single = MyList([42])
 >>> single.print_sorted()
 [42]
 >>> list(single)
 [42]
-
 >>> nums = MyList([-3, 0, 2, -1, 5])
 >>> nums.print_sorted()
 [-3, -1, 0, 2, 5]
 >>> list(nums)
 [-3, 0, 2, -1, 5]
-
 >>> append_test = MyList()
 >>> append_test.append(10)
 >>> append_test.append(1)
