@@ -1,4 +1,7 @@
 #!/usr/bin/python3
+"""Defines a Rectangle class that inherits from BaseGeometry"""
+
+
 Rectangle = __import__('7-base_geometry').BaseGeometry
 
 class Rectangle(Rectangle):
