@@ -8,3 +8,7 @@ class MyList(list):
     def print_sorted(self):
         """Print the list in ascending order without modifying the original"""
         print(sorted(self))
+
+    def __str__(self):
+        """Return the string representation of the list."""
+        return super().__str__()
