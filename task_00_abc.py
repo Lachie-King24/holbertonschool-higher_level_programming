@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-"""Define abstract Animal class and Dog and Cat subclasses"""
+"""Module that defines an abstract Animal class and its Dog and Cat subclasses"""
 
 from abc import ABC, abstractmethod
 
