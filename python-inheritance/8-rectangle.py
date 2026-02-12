@@ -4,6 +4,7 @@
 
 Rectangle = __import__('7-base_geometry').BaseGeometry
 
+
 class Rectangle(Rectangle):
     """Represents a rectangle with private width and height"""
 
