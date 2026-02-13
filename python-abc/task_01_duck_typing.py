@@ -4,7 +4,7 @@
 from abc import ABC, abstractmethod
 import math
 
-
+# Abstract class Shape
 class Shape(ABC):
     """Abstract base class for all shapes"""
 
@@ -19,14 +19,11 @@ class Shape(ABC):
         pass
 
 
+# Circle class
 class Circle(Shape):
     """Circle shape"""
 
     def __init__(self, radius):
-        if not isinstance(radius, (int, float)):
-            raise TypeError("radius must be a number")
-        if radius <= 0:
-            raise ValueError("radius must be greater than 0")
         self.radius = radius
 
     def area(self):
@@ -36,18 +33,11 @@ class Circle(Shape):
         return 2 * math.pi * self.radius
 
 
+# Rectangle class
 class Rectangle(Shape):
     """Rectangle shape"""
 
     def __init__(self, width, height):
-        if not isinstance(width, (int, float)):
-            raise TypeError("width must be a number")
-        if not isinstance(height, (int, float)):
-            raise TypeError("height must be a number")
-        if width <= 0:
-            raise ValueError("width must be greater than 0")
-        if height <= 0:
-            raise ValueError("height must be greater than 0")
         self.width = width
         self.height = height
 
@@ -58,7 +48,8 @@ class Rectangle(Shape):
         return 2 * (self.width + self.height)
 
 
+# Duck typing function
 def shape_info(shape):
-    """Print the area and perimeter of any shape (duck typing)"""
+    """Print the area and perimeter of any shape"""
     print("Area:", shape.area())
     print("Perimeter:", shape.perimeter())
