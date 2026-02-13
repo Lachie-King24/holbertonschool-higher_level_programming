@@ -4,16 +4,20 @@
 from abc import ABC, abstractmethod
 import math
 
+
 class Shape(ABC):
-    """Abstract base class for shapes"""
+    """Abstract base class for all shapes"""
 
     @abstractmethod
     def area(self):
+        """Return the area of the shape"""
         pass
 
     @abstractmethod
     def perimeter(self):
+        """Return the perimeter of the shape"""
         pass
+
 
 class Circle(Shape):
     """Circle shape"""
@@ -26,6 +30,7 @@ class Circle(Shape):
 
     def perimeter(self):
         return 2 * math.pi * self.radius
+
 
 class Rectangle(Shape):
     """Rectangle shape"""
@@ -40,8 +45,9 @@ class Rectangle(Shape):
     def perimeter(self):
         return 2 * (self.width + self.height)
 
+
 def shape_info(shape):
     """Print the area and perimeter of a Shape object"""
-    # Print exactly as expected
+    # Exact expected output format
     print("Area:", shape.area())
     print("Perimeter:", shape.perimeter())
