@@ -12,4 +12,4 @@ The input output python directory provides files that use the file input and out
 
 5-save_to_json_file.py writes an object to a text file using JSON
 
-
+6-load_from_json_file.py creates an object from a JSON file
