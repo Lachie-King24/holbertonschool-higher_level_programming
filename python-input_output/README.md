@@ -7,3 +7,5 @@ The input output python directory provides files that use the file input and out
 2-append_write.py opens a file and appends contents from that file to a new file
 
 3-to_json_string.py returns the JSON representation of an object(string)
+
+4-from_json_string.py returns an object represented by a JSON string
