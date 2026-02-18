@@ -24,7 +24,7 @@ class CustomObject:
         try:
             with open(filename, "wb") as f:
                 pickle.dump(self, f)
-        except (OSError, pickle.PicklingError):
+        except Exception:
             return None
 
     @classmethod
@@ -37,5 +37,5 @@ class CustomObject:
             if not isinstance(obj, cls):
                 return None
             return obj
-        except (OSError, pickle.UnpicklingError):
+        except Exception:
             return None
