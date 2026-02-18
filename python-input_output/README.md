@@ -5,3 +5,5 @@ The input output python directory provides files that use the file input and out
 1-write_file.py opens a file and writes contents from that file to a new file
 
 2-append_write.py opens a file and appends contents from that file to a new file
+
+3-to_json_string.py returns the JSON representation of an object(string)
