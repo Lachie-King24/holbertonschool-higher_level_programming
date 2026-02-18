@@ -2,10 +2,6 @@
 """function to return disc description with simple data"""
 
 
-import json
-
-
-
 def class_to_json(obj):
     """
     Return dictionary of an object's attributes that are
