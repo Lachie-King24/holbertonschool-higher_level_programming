@@ -14,6 +14,7 @@ class CustomObject:
         self.is_student = is_student
 
     def display(self):
+        """display contents"""
         print(f"Name: {self.name}")
         print(f"Age: {self.age}")
         print(f"Is Student: {self.is_student}")
