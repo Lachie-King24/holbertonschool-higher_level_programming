@@ -21,13 +21,21 @@ class CustomObject:
 
     def serialize(self, filename):
         """serialize with pickle"""
-        with open(filename, "wb") as f:
-            pickle.dump(self, f)
+        try:
+            with open(filename, "wb") as f:
+                pickle.dump(self, f)
+        except (OSError, pickle.PicklingError):
+            return None
 
     @classmethod
     def deserialize(cls, filename):
         """deserialize with pickle"""
-        with open(filename, "rb") as f:
-            loaded_data = pickle.load(f)
+        try:
+            with open(filename, "rb") as f:
+                obj = pickle.load(f)
 
-        return loaded_data
+            if not isinstance(obj, cls):
+                return None
+            return obj
+        except (OSError, piclpe.UnpicklingError):
+            return None
