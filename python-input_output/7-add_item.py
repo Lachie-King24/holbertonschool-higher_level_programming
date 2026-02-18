@@ -4,8 +4,8 @@
 
 # import functions
 import sys
-from -s 5-save_to_json_file.py import save_to_json_file.py
-from -s 6-load_from_json_file.py import load_from_json_file.py
+save_to_json_file = __import__('5-save_to_json_file').save_to_json_file
+load_from_json_file = __import__('6-load_from_json_file').load_from_json_file
 
 
 # name file
