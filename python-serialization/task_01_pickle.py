@@ -37,5 +37,5 @@ class CustomObject:
             if not isinstance(obj, cls):
                 return None
             return obj
-        except (OSError, piclpe.UnpicklingError):
+        except (OSError, pickle.UnpicklingError):
             return None
