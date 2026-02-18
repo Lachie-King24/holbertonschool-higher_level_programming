@@ -6,7 +6,7 @@ def pascal_triangle(n):
     """Pascal triangle"""
     # create an empty list
     triangle_list = []
-    
+
     # if n is less or equal to zero
     if n <= 0:
         # print empty list
