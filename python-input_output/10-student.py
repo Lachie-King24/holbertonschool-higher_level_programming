@@ -13,4 +13,4 @@ class Student:
         if isinstance(attrs, list):
             return {key: value for key, value in
                     self.__dict__.items() if key in attrs}
-        return {key: value for key, value in self.__dict__.items()} 
+        return {key: value for key, value in self.__dict__.items()}
