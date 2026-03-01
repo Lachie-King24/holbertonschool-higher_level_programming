@@ -17,7 +17,7 @@ def fetch_and_print_posts():
     if response.status_code == 200:
         posts = response.json()
 
-        for posts in posts:
+        for post in posts:
             print(post.get("title"))
 
 def fetch_and_save_posts():
