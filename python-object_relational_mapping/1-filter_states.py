@@ -19,7 +19,7 @@ if __name__ == "__main__":
     )
 
     cur = db.cursor()
-    cur.execute("SELECT * FROM states WHERE name LIKE 'N%'")
+    cur.execute("SELECT * FROM states WHERE name LIKE 'N%' OR 'n%'")
 
     rows = cur.fetchall()
     for row in rows:
