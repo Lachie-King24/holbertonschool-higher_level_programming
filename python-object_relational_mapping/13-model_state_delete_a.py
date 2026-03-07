@@ -23,7 +23,7 @@ if __name__ == "__main__":
     session = Session()
 
     # Delete all states
-    session.query(State).delete()
+    session.query(State).filter(State.name.like('%a%')).delete()
 
     session.commit()  # Save changes
 
