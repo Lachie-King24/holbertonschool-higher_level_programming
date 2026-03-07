@@ -27,8 +27,10 @@ if __name__ == "__main__":
     WHERE states.name = %s \
     ORDER BY cities.id ASC", (state,))
 
-    for row in cur.fetchall():
-        print(row)
+    # Extract city names from the tuples
+    cities = [row[0] for row in cur.fetchall()]
+
+    print(", ".join(cities))
 
     cur.close()
     db.close()
