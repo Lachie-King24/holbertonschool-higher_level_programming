@@ -27,11 +27,12 @@ if __name__ == "__main__":
 
     # Query all State objects, ordered by id
     states = session.query(State).filter(
-        State.name.like('{state_name}')
-        ).order_by(State.id).all()
+        State.name == state_name).first
 
-    for state in states:
-        print(f"{state.id}")
+    if state:
+        print(state.id)
+    else:
+        print("Not Found")
 
     # Close the session
     session.close()
