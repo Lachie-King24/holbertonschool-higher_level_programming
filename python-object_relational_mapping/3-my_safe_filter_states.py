@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-"""Displays all states where name matches the argument (safe from SQL injection)"""
+"""Show states, safe from SQL injection"""
 
 import MySQLdb
 import sys
