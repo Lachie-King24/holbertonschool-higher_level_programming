@@ -28,10 +28,8 @@ if __name__ == "__main__":
     states = session.query(State).filter(
         State.name.like('%a%')).order_by(State.id).all()
 
-    if states:
-        print(f"{states.id}: {states.name}")
-    else:
-        print("Nothing")
+    for state in states:
+        print(f"{state.id}: {state.name}")
 
     # Close the session
     session.close()
