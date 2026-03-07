@@ -14,8 +14,8 @@ if __name__ == "__main__":
 
     # Connect to the MySQL server using SQLAlchemy
     engine = create_engine(
-        'mysql+mysqldb:\
-            //{}:{}@localhost/{}'.format(username, password, database)
+        'mysql+mysqldb://{}:{}@localhost/{}'.format(
+            username, password, database)
     )
 
     # Create a configured "Session" class
